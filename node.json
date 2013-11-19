@@ -1,9 +1,7 @@
 {
-  "user": 
-    {    },
-    "nginx": {
-      "user": "nginx",
-      "group": "nginx"
-    },
+  "nginx": {
+    "user": "nginx",
+    "group": "nginx"
+  },
   "run_list": ["recipe[main]", "nginx::source"]
 }
