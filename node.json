@@ -1,0 +1,25 @@
+{
+  "user": 
+    {/*
+      "deployer": { 
+        "name": "deployer",
+        "clear_password": "400photographs",
+        "password": "$1$Ux2WhShm$EjEvsnfW3Vr3Eq9yiDGoI0"
+      },
+      "nginx": { 
+        "name": "nginx",
+        "clear_password": "thedefinitiveguide",
+        "password": "$1$KlH4AfhA$uQ6GLyauN7.D0wHuMcTXS/"
+      },
+      "database": { 
+        "name": "database",
+        "clear_password": "theblackswan",
+        "password": "$1$7mjlrBsb$8q64.PaDW8E4o9jXxDynH."
+      }*/
+    },
+    "nginx": {
+      "user": "nginx",
+      "group": "nginx"
+    },
+  "run_list": ["recipe[main]", "nginx::source"]
+}
